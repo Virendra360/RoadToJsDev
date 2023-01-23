@@ -5,10 +5,8 @@ const path = require("path");
 const PORT= 8080;
 const app= express();
 
-const template_path= path.join(__dirname);
 // use of views 
 app.set("view engine","hbs");
-app.set('views',template_path);
  
  //use of static page
 const static_path = path.join(__dirname+"/public"); //declaring static path
