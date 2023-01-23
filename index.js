@@ -6,7 +6,9 @@ const PORT= 8080;
 const app= express();
 
 // use of views 
+const templates_path = path.join(__dirname+"/templates/views"); //declaring static path
 app.set("view engine","hbs");
+app.set("views",templates_path);
  
  //use of static page
 const static_path = path.join(__dirname+"/public"); //declaring static path
