@@ -6,7 +6,9 @@ const PORT= 8080;
 const app= express();
 
 // use of views 
-const templates_path = path.join(__dirname+"/templates/views"); //declaring static path
+//don't forget to add views path or it will show error at time deployment 
+//locally it will work properly
+const templates_path = path.join(__dirname+"/templates/views"); 
 app.set("view engine","hbs");
 app.set("views",templates_path);
  
