@@ -29,8 +29,8 @@ app.get("/projects/tempConvertor",(req,res)=>{
 })
 
 app.get('*',(req,res)=>{
-    res.render("404error");
-    // res.send(`<h1>404 Error, Page Not Found</h1>`)
+    // res.render("404error");
+    res.send(`<h1>404 Error, Page Not Found</h1>`)
 })
 
 app.listen(PORT,()=>{
