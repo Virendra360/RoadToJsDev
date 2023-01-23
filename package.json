@@ -1,7 +1,10 @@
 {
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  },
   "name": "roadtojs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,8 +12,5 @@
   },
   "author": "Virendra Jagtap",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "hbs": "^4.2.0"
-  }
+  "description": ""
 }
