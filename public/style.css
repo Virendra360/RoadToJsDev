@@ -1,0 +1,152 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+}
+
+/* Header section */
+
+.header_div{
+    position: fixed;
+    top: 0px;
+     background-color: aliceblue;
+     font-size: 18px;
+     width: 100%;
+}
+
+#profilePic{
+    width:50px;
+}
+
+/* main section */
+
+.main_div{
+    background-color: #0A1931;
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 15% 10% 10% 10%;
+}
+
+
+.left_div img{
+    max-width: 250px;
+    border-radius: 50px;
+    margin-left: 10%;
+}
+
+.right_div{
+    
+     margin: 5%;
+     color: #ffffff;
+     max-width: 350px;
+     font-size: 18px;
+     text-align: center;
+}
+
+/* projects div style */
+
+.proj_div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ECECEC;
+    justify-content: center;
+    padding:5% 0;
+}
+
+.box{
+    box-shadow:2px 2px 2px 2px black;
+    margin: 2%;
+    background-color: #ffffff;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    padding:20px 0px;
+}
+
+.bottom{
+    background-color: #FDA769;
+    height: 150px;
+    padding: 20px;
+}
+
+.bottom h3{
+     padding: 10% auto;
+     width: 200px;
+     text-align: center;
+}
+
+.box img{
+    max-width: 180px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    padding: 5px ;
+}
+
+/* footer styles */
+
+.footer_top_div{
+    background-color: #ffffff;
+    height: 20px;
+}
+
+.footer_clr_div{
+    padding-top: 20px;
+    background-color: #383838;
+    color: #ffffff;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_clr_div p{
+         text-align: center;
+         max-width: 450px;
+}
+
+.contact_logo img{
+           width: 45px;
+           border-radius: 5px;
+}
+
+.contact_logo img:hover{
+    width: 50px;
+}
+
+/* 404 Error Page styel */
+.err_div{
+      height:100vh ;
+     background-color: #e7d6d6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.err_div img {
+         max-width: 400px;
+}
+
+
+/* Responsive */
+
+@media(max-width:768px)
+{
+    .main_div{
+        padding-top: 30%;
+    }
+
+    .left_div img{
+        max-width: 200px;
+        margin-left: 10%;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadToJs</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+
+    <!-- bootstrap cdn links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- bootstrap-icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Font awesome (version:6.2.1) cdn link for all   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- local styel sheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <!-- Header section -->
+        <div class="header_div" >
+         
+          <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="/"><img id="profilePic" src="images/web-development.png" class="rounded rounded-circle"> RoadToJS </a>
+              <button class="navbar-toggler navtoggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                     <a class="nav-link "  aria-current="page" href="/">HOME</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#proj_div">PROJECTS</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#Contact_div">CONTACT</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+        </div>
+
+      <!-- main section -->
+        <div class="main_div" id="home">
+                <div class="left_div">
+                       <img src="images/js-img.png">
+                </div>
+                <div class="right_div">
+                       <h1>Welcome to the 'Road To JS' </h1>
+                       <p>In this course, we will learn JavaScript by working on projects.</p>
+                </div>
+        </div>
+
+      <!-- Project section -->
+            <div class="proj_div" id="proj_div">
+                   <div class="box">
+                        <div class="top">
+                          <img src="images/bmi_img.png" alt="projectPic">
+                        </div>
+                        <div class="bottom">
+                             <h3>BMI Calculator</h3>
+                             <div class="btnContainer">
+                                  <button onclick="navToGitHub(event)" name="bmiCalc" class="btn btn-secondary me-2" id="btnCodeBmi">Code</button>
+                                  <button onclick="openProject(event)"  name="bmiCalc" class="btn btn-secondary me-2" name="bmiCalc" id="btnDemoBmi">Demo</button>
+                             </div>
+                        </div>
+                   </div>
+                   <div class="box">
+                        <div class="top">
+                          <img src="images/temp_conv_pimg.png" alt="projectPic">
+                        </div>
+                        <div class="bottom">
+                            <h3>Temperature Convertor</h3>
+                            <div class="btnContainer">
+                              <button onclick="navToGitHub(event)" name="tempConv" class="btn btn-secondary me-2" id="btnCodeTemp">Code</button>
+                              <button onclick="openProject(event)" name="tempConv" class="btn btn-secondary me-2" id="btnDemoTemp">Demo</button>
+                            </div>
+                        </div>
+                   </div>  
+                   <div class="box">
+                        <div class="top">
+                            <img src="images/age_calc_img.png" alt="projectPic">
+                        </div>
+                        <div class="bottom">
+                            <h3>Konw your Age</h3>
+                            <div class="btnContainer">
+                               <button onclick="navToGitHub(event,this)" name="ageCalc" class="btn btn-secondary me-2" id="btnCodeAge">Code</button>
+                               <button onclick="openProject(event,this)" name="ageCalc" class="btn btn-secondary me-2" id="btnDemoAge">Demo</button>
+                            </div>
+                        </div>
+                    </div>     
+            </div>
+
+
+      <!-- Footer section -->
+
+      <div class="footer_div" id="Contact_div">
+              <div class="footer_top_div"></div>
+              <div class="footer_clr_div">
+                    <h1>VIENDRA JAGTAP</h1>
+                    <p>Cricket is my first love followed by coding! Love cricket as much as I do? Let's talk about how awesome it is! We can code while we watch cricket! <br>Email me :&nbsp;<span style="color: #1db1f1;"> jagtapvr18.mech@coep.ac.in</span></p>
+                    
+                    <div class="contact_logo">
+                        <a href="https://linkedin.com/in/virendra-jagtap-35b321197" target="_blank"><img src="images/linkedin.png" alt="linkedin-logo"></a>
+                        <a href="https://github.com/Virendra360" target="_blank"><img style="background-color: white;" src="images/github-img.png" alt="github-logo"></a>
+                      
+                    </div>
+                    <hr width="90%">
+                    <p style="font-size: 14px;">Copyright &copy; Virendra Jagtap 2023.</p>
+              </div>
+      </div>
+
+
+
+<!-- local script  -->
+<script src="script.js"></script>
+<!-- jquery cdn -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!-- bootstrap js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+</body>
+</body>
+</html>

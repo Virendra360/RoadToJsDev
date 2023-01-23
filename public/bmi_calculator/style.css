@@ -1,0 +1,39 @@
+/* style */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+}
+
+#quotesCarousel{
+    margin: 50px auto;
+    max-width:800px ;
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+
+form{
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(177, 36, 36);
+    border-radius: 10px;
+    background-color: #FFEBB7;
+}
+
+#resultContainer{
+      background-color: aliceblue;
+      padding-left: 20px;
+}
