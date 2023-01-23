@@ -12,7 +12,7 @@ app.set("view engine","hbs");
 const static_path = path.join(__dirname+"/public"); //declaring static path
 app.use(express.static(static_path)); 
 
-app.get("/",(req,res)=>{
+app.get("",(req,res)=>{
       res.render("index");   
 })
 
